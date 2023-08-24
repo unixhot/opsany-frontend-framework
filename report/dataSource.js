@@ -1,0 +1,361 @@
+const dataSource = [{
+	"key": "hostname",
+	"value": "jwzb-kk5-test"
+}, {
+	"key": "os_version",
+	"value": "Linux-3.10.0-327.el7.x86_64-x86_64-with-centos-7.2.1511-Core 64bit"
+}, {
+	"key": "os_uptime",
+	"value": 308.73729166666664
+}, {
+	"key": "fs_type",
+	"value": "xfs"
+}, {
+	"key": "memory",
+	"value": 16.659144704
+}, {
+	"key": "cpu_num",
+	"value": "4"
+}, {
+	"key": "cpu_type",
+	"value": "Intel(R) Xeon(R) CPU E5-2640 v4 @ 2.40GHz"
+}, {
+	"key": "cpu_percent",
+	"value": 2.4
+}, {
+	"key": "mem_percent",
+	"value": 84.5
+}, {
+	"key": "core_error",
+	"value": "0"
+}, {
+	"key": "us_cpu",
+	"value": 1.3
+}, {
+	"key": "sys_cpu",
+	"value": 1.7
+}, {
+	"key": "disk_total",
+	"value": 253.8
+}, {
+	"key": "disk_percent",
+	"value": 65.1
+}, {
+	"key": "fstotal",
+	"value": [{
+		"item": "/",
+		"count": 35.9
+	}, {
+		"item": "/dev",
+		"count": 7.7
+	}, {
+		"item": "/dev/shm",
+		"count": 7.8
+	}, {
+		"item": "/run",
+		"count": 7.8
+	}, {
+		"item": "/sys/fs/cgroup",
+		"count": 7.8
+	}, {
+		"item": "/boot",
+		"count": 0.5
+	}, {
+		"item": "/home",
+		"count": 17.5
+	}, {
+		"item": "/home/kk",
+		"count": 199.9
+	}, {
+		"item": "/run/user/42",
+		"count": 1.6
+	}, {
+		"item": "/run/user/0",
+		"count": 1.6
+	}, {
+		"item": "/var/log/rtlog",
+		"count": 0.1
+	}]
+}, {
+	"key": "fsused",
+	"value": [{
+		"item": "/",
+		"count": 24.2
+	}, {
+		"item": "/dev",
+		"count": 7.7
+	}, {
+		"item": "/dev/shm",
+		"count": 7.0
+	}, {
+		"item": "/run",
+		"count": 7.1
+	}, {
+		"item": "/sys/fs/cgroup",
+		"count": 7.8
+	}, {
+		"item": "/boot",
+		"count": 0.3
+	}, {
+		"item": "/home",
+		"count": 10.8
+	}, {
+		"item": "/home/kk",
+		"count": 129.9
+	}, {
+		"item": "/run/user/42",
+		"count": 1.6
+	}, {
+		"item": "/run/user/0",
+		"count": 1.6
+	}, {
+		"item": "/var/log/rtlog",
+		"count": 0.1
+	}]
+}, {
+	"key": "fsfree",
+	"value": [{
+		"item": "/",
+		"count": 11.7
+	}, {
+		"item": "/dev",
+		"count": 0.0
+	}, {
+		"item": "/dev/shm",
+		"count": 0.8
+	}, {
+		"item": "/run",
+		"count": 0.7
+	}, {
+		"item": "/sys/fs/cgroup",
+		"count": 0.0
+	}, {
+		"item": "/boot",
+		"count": 0.2
+	}, {
+		"item": "/home",
+		"count": 6.7
+	}, {
+		"item": "/home/kk",
+		"count": 70.0
+	}, {
+		"item": "/run/user/42",
+		"count": 0.0
+	}, {
+		"item": "/run/user/0",
+		"count": 0.0
+	}, {
+		"item": "/var/log/rtlog",
+		"count": 0.0
+	}]
+}, {
+	"key": "fspercent",
+	"value": [{
+		"item": "/",
+		"count": 33.0
+	}, {
+		"item": "/dev",
+		"count": 0.0
+	}, {
+		"item": "/dev/shm",
+		"count": 10.0
+	}, {
+		"item": "/run",
+		"count": 10.0
+	}, {
+		"item": "/sys/fs/cgroup",
+		"count": 0.0
+	}, {
+		"item": "/boot",
+		"count": 32.0
+	}, {
+		"item": "/home",
+		"count": 39.0
+	}, {
+		"item": "/home/kk",
+		"count": 36.0
+	}, {
+		"item": "/run/user/42",
+		"count": 1.0
+	}, {
+		"item": "/run/user/0",
+		"count": 0.0
+	}, {
+		"item": "/var/log/rtlog",
+		"count": 0.0
+	}]
+}, {
+	"key": "top_process_cpu",
+	"value": [{
+		"item": "/usr/local/opsany-agent/agent/bin/python3.6 /usr/local/opsany-agent/agent/bin/salt-minion -c /usr/local/opsany-agent/conf/",
+		"count": 7.3
+	}, {
+		"item": "/usr/local/opsany-agent/agent/bin/python3 /tmp/__salt.tmp.sddpasoy.py",
+		"count": 6.3
+	}, {
+		"item": "/home/kk/jdk1.8.0_202/bin/java -server -Xms512m -Xmx512m -Xmn512m -XX:+UseG1GC -XX:G1HeapRegionSize=16m -XX:G1ReservePercent=25 -XX:InitiatingHeapOccupancyPercent=30 -XX:SoftRefLRUPolicyMSPerMB=0 -verbose:gc -Xloggc:/dev/shm/rmq_broker_gc_%p_%t.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintAdaptiveSizePolicy -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=30m -XX:-OmitStackTraceInFastThrow -XX:+AlwaysPreTouch -XX:MaxDirectMemorySize=15g -XX:-UseLargePages -XX:-UseBiasedLocking -Djava.ext.dirs=/home/kk/jdk1.8.0_202/jre/lib/ext:/home/kk/mq/bin/../lib:/home/kk/jdk1.8.0_202/lib/ext -cp .:/home/kk/mq/bin/../conf:.:/usr/lib//lib/tools.jar -Drocketmq.broker.diskSpaceWarningLevelRatio=0.8 org.apache.rocketmq.broker.BrokerStartup -c /home/kk/mq/conf/broker8410.conf",
+		"count": 3.0
+	}, {
+		"item": "/home/kk/jdk1.8.0_202/bin/java -server -Xms51m -Xmx512m -Xmn512m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=320m -XX:+UseConcMarkSweepGC -XX:+UseCMSCompactAtFullCollection -XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled -XX:SoftRefLRUPolicyMSPerMB=0 -XX:+CMSClassUnloadingEnabled -XX:SurvivorRatio=8 -XX:-UseParNewGC -verbose:gc -Xloggc:/dev/shm/rmq_srv_gc_%p_%t.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=30m -XX:-OmitStackTraceInFastThrow -XX:-UseLargePages -Djava.ext.dirs=/home/kk/jdk1.8.0_202/jre/lib/ext:/home/kk/mq/bin/../lib:/home/kk/jdk1.8.0_202/lib/ext -cp .:/home/kk/mq/bin/../conf:.:/usr/lib//lib/tools.jar org.apache.rocketmq.namesrv.NamesrvStartup -c /home/kk/mq/conf/namesrv.conf",
+		"count": 1.2
+	}, {
+		"item": "/usr/lib/polkit-1/polkitd --no-debug",
+		"count": 0.7
+	}, {
+		"item": "./java_datasyn -Xms256M -Xmx512M -XX:PermSize=64M -XX:MaxPermSize=128M -Dcom.sun.management.jmxremote -Djava.rmi.server.hostname=172.20.10.40 -Dcom.sun.management.jmxremote.port=5144 -Dcom.sun.management.jmxremote.rmi.port=5144 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dlogback.configurationFile=../conf/logback_DataSync.xml -DAppId=DataSync-3 cn.com.landray.kk.server.datasync.DataSyncServer --Ice.Config=/home/kk/server/bin/db/node/servers/DataSync-3/config/config",
+		"count": 0.5
+	}, {
+		"item": "/home/kk/console/java_console -Djava.util.logging.config.file=/home/kk/console/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -server -Duser.timezone=UTC+08 -Xms512m -Xmx2048m -XX:-UseGCOverheadLimit -verbose:gc -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=8029 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.password.file=../conf/jmxremote.password -Dcom.sun.management.jmxremote.access.file=../conf/jmxremote.access -Djava.rmi.server.hostname=172.20.10.40 -Dignore.endorsed.dirs= -classpath /home/kk/console/bin/bootstrap.jar:/home/kk/console/bin/tomcat-juli.jar -Dcatalina.base=/home/kk/console -Dcatalina.home=/home/kk/console -Djava.io.tmpdir=/home/kk/console/temp org.apache.catalina.startup.Bootstrap start",
+		"count": 0.4
+	}, {
+		"item": "/usr/local/node_exporter/node_exporter",
+		"count": 0.3
+	}, {
+		"item": "/usr/sbin/mysqld --basedir=/usr --datadir=/home/kk/data/mysql --plugin-dir=/usr/lib64/mysql/plugin --user=mysql --log-error=/var/lib/mysql/mysqld.err --pid-file=/home/kk/data/mysql/jwzb-kk5-test.pid --socket=/home/kk/data/mysql/mysql.sock --port=3306",
+		"count": 0.3
+	}, {
+		"item": "./java_wsserver -Xms512M -Xmx512M -XX:PermSize=128M -XX:MaxPermSize=128M -Dcom.sun.management.jmxremote -Djava.rmi.server.hostname=172.20.10.40 -Dcom.sun.management.jmxremote.port=5149 -Dcom.sun.management.jmxremote.rmi.port=5149 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dlogback.configurationFile=../conf/logback_wsserver.xml cn.com.landray.kk.server.wsserver.WSServer --Ice.Config=/home/kk/server/bin/db/node/servers/WSServer-3/config/config",
+		"count": 0.3
+	}]
+}, {
+	"key": "top_process_mem",
+	"value": [{
+		"item": "/home/kk/jdk1.8.0_202/bin/java -Xshare:auto -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=SPI,JRE -Xms1g -Xmx1g -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=/tmp/elasticsearch-5471591357604351154 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=data -XX:ErrorFile=logs/hs_err_pid%p.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintTenuringDistribution -XX:+PrintGCApplicationStoppedTime -Xloggc:logs/gc.log -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=32 -XX:GCLogFileSize=64m -XX:MaxDirectMemorySize=536870912 -Des.path.home=/home/kk/search -Des.path.conf=/home/kk/search/config -Des.distribution.flavor=default -Des.distribution.type=tar -Des.bundled_jdk=true -cp /home/kk/search/lib/* org.elasticsearch.bootstrap.Elasticsearch -d",
+		"count": 8.4
+	}, {
+		"item": "/home/kk/console/java_console -Djava.util.logging.config.file=/home/kk/console/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -server -Duser.timezone=UTC+08 -Xms512m -Xmx2048m -XX:-UseGCOverheadLimit -verbose:gc -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=8029 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.password.file=../conf/jmxremote.password -Dcom.sun.management.jmxremote.access.file=../conf/jmxremote.access -Djava.rmi.server.hostname=172.20.10.40 -Dignore.endorsed.dirs= -classpath /home/kk/console/bin/bootstrap.jar:/home/kk/console/bin/tomcat-juli.jar -Dcatalina.base=/home/kk/console -Dcatalina.home=/home/kk/console -Djava.io.tmpdir=/home/kk/console/temp org.apache.catalina.startup.Bootstrap start",
+		"count": 8.0
+	}, {
+		"item": "gnome-shell --mode=gdm",
+		"count": 5.7
+	}, {
+		"item": "/usr/sbin/mysqld --basedir=/usr --datadir=/home/kk/data/mysql --plugin-dir=/usr/lib64/mysql/plugin --user=mysql --log-error=/var/lib/mysql/mysqld.err --pid-file=/home/kk/data/mysql/jwzb-kk5-test.pid --socket=/home/kk/data/mysql/mysql.sock --port=3306",
+		"count": 5.4
+	}, {
+		"item": "/home/kk/jdk1.8.0_202/bin/java -server -Xms512m -Xmx512m -Xmn512m -XX:+UseG1GC -XX:G1HeapRegionSize=16m -XX:G1ReservePercent=25 -XX:InitiatingHeapOccupancyPercent=30 -XX:SoftRefLRUPolicyMSPerMB=0 -verbose:gc -Xloggc:/dev/shm/rmq_broker_gc_%p_%t.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintAdaptiveSizePolicy -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=30m -XX:-OmitStackTraceInFastThrow -XX:+AlwaysPreTouch -XX:MaxDirectMemorySize=15g -XX:-UseLargePages -XX:-UseBiasedLocking -Djava.ext.dirs=/home/kk/jdk1.8.0_202/jre/lib/ext:/home/kk/mq/bin/../lib:/home/kk/jdk1.8.0_202/lib/ext -cp .:/home/kk/mq/bin/../conf:.:/usr/lib//lib/tools.jar -Drocketmq.broker.diskSpaceWarningLevelRatio=0.8 org.apache.rocketmq.broker.BrokerStartup -c /home/kk/mq/conf/broker8410.conf",
+		"count": 4.2
+	}, {
+		"item": "/home/kk/reader/java_reader -Djava.util.logging.config.file=/home/kk/reader/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -server -Duser.timezone=UTC+08 -Xms512m -Xmx2048m -XX:-UseGCOverheadLimit -verbose:gc -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=8309 -Dcom.sun.management.jmxremote.rmi.port=8309 -Djava.awt.headless=true -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.password.file=../conf/jmxremote.password -Dcom.sun.management.jmxremote.access.file=../conf/jmxremote.access -Djava.rmi.server.hostname=172.20.10.40 -Dignore.endorsed.dirs= -classpath /home/kk/reader/bin/bootstrap.jar:/home/kk/reader/bin/tomcat-juli.jar -Dcatalina.base=/home/kk/reader -Dcatalina.home=/home/kk/reader -Djava.io.tmpdir=/home/kk/reader/temp org.apache.catalina.startup.Bootstrap start",
+		"count": 4.1
+	}, {
+		"item": "./java_app -Dcom.sun.management.jmxremote -Djava.rmi.server.hostname=172.20.10.40 -Dcom.sun.management.jmxremote.port=5140 -Dcom.sun.management.jmxremote.rmi.port=5140 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Xms512M -Xmx512M -XX:MaxPermSize=128M -XX:MaxDirectMemorySize=1024M -Xbootclasspath/p:../lib/alpn-boot-8.1.13.v20181017.jar -Dlogback.configurationFile=../conf/logback_IceAppBoxManager.xml -DAppId=AppBoxManager-3 cn.com.landray.kk.core.Sl4jIceBoxServer --Ice.Config=/home/kk/server/bin/db/node/servers/AppBoxServer3/config/config",
+		"count": 4.0
+	}, {
+		"item": "jsvc.exec -home /usr/local/src/flow/jre/linux/64 -Djava.library.path=/usr/local/src/flow/bin/linux/64 -XX:NewSize=512m -XX:PermSize=512M -XX:MaxNewSize=512m -XX:MaxPermSize=512m -wait 5000 -pidfile /usr/local/src/flow/bin/jsvc.pid -outfile /usr/local/src/flow/logs/out.log -errfile /usr/local/src/flow/logs/err.log -cp :/usr/local/src/flow/lib/*: com.dbappsecurity.web.service.linux.Main",
+		"count": 3.5
+	}, {
+		"item": "./java_serverj -Xms512M -Xmx512M -XX:PermSize=128M -XX:MaxPermSize=128M -Dcom.sun.management.jmxremote -Djava.rmi.server.hostname=172.20.10.40 -Dcom.sun.management.jmxremote.port=5145 -Dcom.sun.management.jmxremote.rmi.port=5145 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dlogback.configurationFile=../conf/logback_serverj.xml cn.com.landray.kk.server.serverj.ServerjServer --Ice.Config=/home/kk/server/bin/db/node/servers/ServerJ-3/config/config",
+		"count": 3.2
+	}, {
+		"item": "/usr/libexec/mission-control-5",
+		"count": 3.2
+	}]
+}, {
+	"key": "ip",
+	"value": [{
+		"item": "eno16777984",
+		"count": "172.20.10.40"
+	}, {
+		"item": "lo",
+		"count": "127.0.0.1"
+	}, {
+		"item": "virbr0",
+		"count": "192.168.122.1"
+	}, {
+		"item": "virbr0-nic",
+		"count": ""
+	}]
+}, {
+	"key": "broadcast",
+	"value": [{
+		"item": "eno16777984",
+		"count": "172.20.10.255"
+	}, {
+		"item": "lo",
+		"count": ""
+	}, {
+		"item": "virbr0",
+		"count": "192.168.122.255"
+	}, {
+		"item": "virbr0-nic",
+		"count": ""
+	}]
+}, {
+	"key": "mac",
+	"value": [{
+		"item": "eno16777984",
+		"count": "00:50:56:95:4F:AA"
+	}, {
+		"item": "lo",
+		"count": "00:00:00:00:00:00"
+	}, {
+		"item": "virbr0",
+		"count": "52:54:00:A5:4E:22"
+	}, {
+		"item": "virbr0-nic",
+		"count": "52:54:00:A5:4E:22"
+	}]
+}, {
+	"key": "mask",
+	"value": [{
+		"item": "eno16777984",
+		"count": "255.255.255.0"
+	}, {
+		"item": "lo",
+		"count": "255.0.0.0"
+	}, {
+		"item": "virbr0",
+		"count": "255.255.255.0"
+	}, {
+		"item": "virbr0-nic",
+		"count": ""
+	}]
+}, {
+	"key": "status",
+	"value": [{
+		"item": "eno16777984",
+		"count": "Active"
+	}, {
+		"item": "lo",
+		"count": "Active"
+	}, {
+		"item": "virbr0",
+		"count": "Inactive"
+	}, {
+		"item": "virbr0-nic",
+		"count": "Inactive"
+	}]
+}, {
+	"key": "speed",
+	"value": [{
+		"item": "eno16777984",
+		"count": "10000"
+	}, {
+		"item": "lo",
+		"count": "0"
+	}, {
+		"item": "virbr0",
+		"count": "0"
+	}, {
+		"item": "virbr0-nic",
+		"count": "0"
+	}]
+}, {
+	"key": "vm.swappiness",
+	"value": "30"
+}, {
+	"key": "net.ipv4.ip_forward",
+	"value": "1"
+}, {
+	"key": "net.ipv4.tcp_syncookies",
+	"value": "1"
+}, {
+	"key": "net.ipv4.tcp_tw_reuse",
+	"value": "1"
+}, {
+	"key": "net.ipv4.tcp_tw_recycle",
+	"value": "1"
+}, {
+	"key": "net.ipv4.tcp_fin_timeout",
+	"value": "1"
+}]
